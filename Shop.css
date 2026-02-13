@@ -1,0 +1,291 @@
+
+body {
+    margin: 0;
+    font-family: 'Orbitron', sans-serif;
+    color: white;
+    background: black;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 80px;
+    background:white;
+    
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo img {
+    height: 90px;
+}
+
+.logo span {
+    font-size: 24px;
+    font-weight: 600;
+    color: black;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    margin-left: 40px;
+    padding: 8px 18px;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background: white;
+    color: black;
+}
+
+.hero {
+    height: 100vh;
+    background: url("Assets/Images/cameratop.jpg") center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-content {
+    background: rgba(0,0,0,0.6);
+    padding: 60px;
+    border-radius: 20px;
+}
+
+.hero-content h1 {
+    font-size: 80px;
+    margin: 0;
+}
+
+.hero-content h2 {
+    font-size: 50px;
+    margin: 10px 0 30px 0;
+}
+
+.hero-content p {
+    font-size: 20px;
+    max-width: 700px;
+}
+
+.shop {
+    position: relative;
+    overflow: hidden;
+    padding: 100px 80px;
+    text-align: center;
+
+}
+
+.shop-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
+
+.shop h2,
+.shop-container {
+    position: relative;
+    z-index: 2;
+}
+
+.shop h2 {
+    font-size: 50px;
+    margin-bottom: 60px;
+}
+
+.shop-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.card {
+    background: linear-gradient(#3a3a3a, #7a7a7a);
+    width: 300px;
+    padding: 25px;
+    border-radius: 20px;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+
+.card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.card:hover {
+    transform: scale(1.08);
+}
+
+.card h3 {
+    font-size: 22px;
+    margin-top: 20px;
+}
+
+.card p {
+    font-size: 15px;
+    color: #ccc;
+}
+
+.bottom {
+    height: 500px;
+    background: url("Assets/Images/down.jpg") center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bottom-overlay {
+    background: rgba(0,0,0,0.7);
+    padding: 60px;
+    border-radius: 25px;
+    text-align: center;
+    width: 60%;
+}
+
+.bottom-overlay h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.bottom-overlay p {
+    font-size: 18px;
+}
+
+footer {
+    background: black;
+    padding: 40px;
+    text-align: center;
+}
+
+footer h3 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+footer p {
+    margin: 8px 0;
+    font-size: 16px;
+}
+
+
+/* security assesment */
+.assessment-hero {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.assessment-video {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.assessment-hero-content {
+    position: relative;
+    background: rgba(0,0,0,0.6);
+    padding: 60px;
+    border-radius: 20px;
+}
+
+.assessment-hero-content h1 {
+    font-size: 80px;
+    margin: 0;
+}
+
+.assessment-hero-content h2 {
+    font-size: 50px;
+    margin-top: 10px;
+}
+
+
+.assessment {
+    background: linear-gradient(#3a3a3a, #7a7a7a);
+    background: url("Assets/Images/mountain.jpg") center/cover no-repeat;
+    padding: 100px 80px;
+    text-align: center;
+}
+
+
+.assessment-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.assessment-box {
+    background: linear-gradient(#3a3a3a, #7a7a7a);
+    width: 350px;
+    padding: 35px;
+    border-radius: 20px;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.assessment-box:hover {
+    transform: scale(1.08);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Orbitron;
+}
+
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 0px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+}
+
+ul li{
+    margin: 0px 35px;
+    padding: 5px 15px;
+    background-color: black;
+    border-radius: 10px;
+    font-size: 20px;
+    color: white;
+}
+
+ul a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-icons a{
+    margin:0px 15px
+}
