@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Orbitron;
+}
+
+body{
+    background-image:url(Assets/Images/Background1.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 0px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+}
+
+ul li{
+    margin: 0px 35px;
+    padding: 5px 15px;
+    background-color: black;
+    border-radius: 10px;
+    font-size: 20px;
+    color: white;
+}
+
+ul a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-icons a{
+    margin:0px 15px
+}
+
+h1{
+    color: white;
+    font-size: 100px;
+    margin-top: 180px;
+    margin-left: 50px;
+}
+h2{
+    color: white;
+    font-size: 40px;
+    margin-top: 80px;
+    margin-left: 50px;
+}
