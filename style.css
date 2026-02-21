@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Orbitron;
+}
+
+body{
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 0px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+}
+
+ul li{
+    margin: 0px 35px;
+    padding: 5px 15px;
+    background-color: black;
+    border-radius: 10px;
+    font-size: 20px;
+    color: white;
+}
+
+ul a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-icons a{
+    margin:0px 15px
+}
+
+#Name{
+    color: black;
+    font-size: 45px;
+    font-weight: bold;
+    
+}
+
+h1{
+    color: white;
+    font-size: 100px;
+    margin-top: 180px;
+    margin-left: 50px;
+}
+
+h2{
+    color: white;
+    font-size: 40px;
+    margin-top: 80px;
+    margin-left: 50px;
+}
+
+
+
+
+#BG-Vid{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+}
+.statistics {
+    text-align: center;
+    margin-top: 50px;
+    font-family: 'Orbitron', sans-serif;
+    color: white;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 300px;
+}
+
+circle {
+    fill: none;
+    stroke-width: 10; 
+}
+
+.in-circle {
+    stroke: #FFF;
+}
+
+.out-circle {
+    stroke: grey;
+    stroke-dasharray: 440;
+    stroke-linecap: round; 
+    stroke-dashoffset: 440;
+    transform: rotate(-90deg);
+    transform-origin: center;
+    transition: stroke-dashoffset 2s ease-in-out;
+}
