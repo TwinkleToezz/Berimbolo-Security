@@ -5,49 +5,61 @@ body {
     color: white;
     background: black;
 }
-.navbar{
+
+.navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: white;
-    padding: 0px;
+    padding: 10px 40px;
     position: sticky;
     top: 0;
     z-index: 1000;
 }
 
+#Name {
+    color: black;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 0; 
+}
+
 ul {
     display: flex;
     list-style: none;
+    margin: 0; 
+    padding: 0;
+    align-items: center;
 }
 
-ul li{
-    margin: 0px 35px;
-    padding: 5px 15px;
+ul li {
+    margin: 0 15px; 
+    padding: 10px 20px;
     background-color: black;
     border-radius: 10px;
-    font-size: 20px;
+    font-size: 16px;
     color: white;
+    white-space: nowrap; 
 }
 
-ul a{
-    color: white;
+.nav-icons {
+    display: flex;
+    align-items: center;
+}
+
+.nav-icons a {
+    margin-left: 20px; 
+}
+
+a {
     text-decoration: none;
-    font-weight: bold;
 }
-
-.nav-icons a{
-    margin:0px 15px
-}
-
 #Name{
     color: black;
     font-size: 45px;
     font-weight: bold;
     
 }
-
-
 
 .hero {
     height: 100vh;
@@ -292,4 +304,89 @@ ul a{
 
 .nav-icons a{
     margin:0px 15px
+}
+
+@media screen and (max-width: 768px) {
+    html, body {
+        width: 100%;
+        overflow-x: hidden;
+        margin: 0;
+        padding: 0;
+    }
+
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 15px 0;
+    }
+
+    .Logo img {
+        height: 65px;
+        margin-bottom: 5px;
+    }
+
+    #Name {
+        font-size: 24px;
+        margin: 0 0 15px 0;
+        text-align: center;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        padding: 0;
+    }
+
+    ul li {
+        width: 280px;
+        text-align: center;
+    }
+
+    
+    .bottom-overlay, 
+    .card, 
+    .assessment-box {
+        width: 90%;
+        max-width: 90%;
+        margin: 15px auto;
+        padding: 20px;
+        box-sizing: border-box; 
+        height: auto;
+        position: relative;
+        left: 0;
+        transform: none;
+    }
+
+   
+    .bottom-overlay p, 
+    .about-section p {
+        font-size: 15px;
+        line-height: 1.5;
+        text-align: center;
+        word-wrap: break-word;
+        white-space: normal;
+        margin: 10px 0;
+    }
+
+    .shop-container, 
+    .assessment-container,
+    .stats-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 30px;
+        text-align: center;
+        margin: 15px 0;
+    }
+
+    .purecounter, .plus {
+        font-size: 45px;
+    }
 }
