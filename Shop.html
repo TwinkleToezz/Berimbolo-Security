@@ -5,31 +5,34 @@
     <title>Berimbolo Security</title>
     <link rel="stylesheet" href="Shop.css">
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
 
 <header>
-<nav class ="navbar">
-        <div class = "Logo">
-            <a href="index.html">
-                <img src="Assets/Images/Logo.png" alt = "Company Logo" style = "height: 150px;">
-            </a>
-        </div>
-        <a id = "Name">Berimbolo Security</a>
-        <ul>
-            <a href="Shop.html"><li class = "Shop">Shop</li></a>
-            <a><li class = "About-us">About Us</li></a>
-            <a href="security.html"><li class = "Security-Assesment">Security Assesment</li></a>
-            <a><li class = "Services">Services</li></a>
-        </ul>
+<nav class="navbar">
+    <div class="brand-container">
+        <a href="index.html">
+            <img src="Assets/Images/Logo.png" alt="Company Logo" class="logo-img"> 
+        </a>
+        <span id="Name">Berimbolo<br>Security</span>
+    </div>
 
-            <div class = "nav-icons" >
-                <a href="#"><img src="Assets/Images/Phone.png" alt="contacts" style = "height: 30px;"></a>
-                <a href="#"><img src="Assets/Images/Profile.png" alt="Account" style = "height: 30px;"></a>
-        </ul>
-    </nav>
-    </nav>
+    <input type="checkbox" id="menu-toggle" style="display: none;">
+    <label for="menu-toggle" class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </label>
+
+    <ul>
+        <li><a href="Shop.html">Shop</a></li>
+        <li><a href="about-us.html">About Us</a></li>
+        <li><a href="security.html">Security Assessment</a></li>
+        <li><a href="#">Services</a></li>
+    </ul>
+</nav>
 </header>
 
 <section class="hero">

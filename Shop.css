@@ -6,40 +6,52 @@ body {
     background: black;
 }
 
-.navbar {
+.brand-container {
+    display: flex;
+    align-items: center;
+}
+
+.navbar{
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: white;
-    padding: 10px 40px;
+    padding: 4px 24px;
     position: sticky;
     top: 0;
     z-index: 1000;
 }
 
-#Name {
-    color: black;
-    font-size: 30px;
-    font-weight: bold;
-    margin: 0; 
+.logo-img{
+    height: 42px;
 }
 
-ul {
+#Name{
+    color: black;
+    font-size: 26px;
+    font-weight: 800;
+    line-height: 1;
+}
+
+ul{
     display: flex;
     list-style: none;
-    margin: 0; 
+    margin: 0;
     padding: 0;
-    align-items: center;
+    gap: 30px;
 }
 
-ul li {
-    margin: 0 15px; 
-    padding: 10px 20px;
-    background-color: black;
+ul li{
+    padding: 6px 14px;
+    background: black;
     border-radius: 10px;
     font-size: 16px;
+}
+
+ul li a{
     color: white;
-    white-space: nowrap; 
+    text-decoration: none;
+    font-weight: bold;
 }
 
 .nav-icons {
@@ -54,12 +66,7 @@ ul li {
 a {
     text-decoration: none;
 }
-#Name{
-    color: black;
-    font-size: 45px;
-    font-weight: bold;
-    
-}
+
 
 .hero {
     height: 100vh;
@@ -236,12 +243,10 @@ footer p {
 
 
 .assessment {
-    background: linear-gradient(#3a3a3a, #7a7a7a);
     background: url("Assets/Images/mountain.jpg") center/cover no-repeat;
     padding: 100px 80px;
     text-align: center;
 }
-
 
 .assessment-container {
     display: flex;
@@ -251,60 +256,67 @@ footer p {
 }
 
 .assessment-box {
-    background: linear-gradient(#3a3a3a, #7a7a7a);
+    background: linear-gradient(145deg, #1a1a1a, #333);
     width: 350px;
     padding: 35px;
     border-radius: 20px;
+    border: 1px solid #444;
     transition: 0.4s;
     cursor: pointer;
 }
 
 .assessment-box:hover {
-    transform: scale(1.08);
+    transform: translateY(-10px);
+    border-color: #ffffff;
+    box-shadow: 0 10px 20px rgba(255, 255, 255, 0.1);
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: Orbitron;
+.assessment-box h3 {
+    margin-bottom: 15px;
+    font-size: 22px;
 }
 
-
-.navbar{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: white;
-    padding: 0px;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
+.assessment-box p {
+    font-size: 15px;
+    color: #ccc;
+    line-height: 1.5;
 }
 
 ul {
     display: flex;
     list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 20px;
 }
 
-ul li{
-    margin: 0px 35px;
-    padding: 5px 15px;
+ul li {
+    padding: 10px 20px;
     background-color: black;
     border-radius: 10px;
-    font-size: 20px;
-    color: white;
+    font-size: 18px;
 }
 
-ul a{
+ul li a {
     color: white;
     text-decoration: none;
     font-weight: bold;
 }
 
-.nav-icons a{
-    margin:0px 15px
+.nav-icons {
+    display: flex;
+    align-items: center;
 }
+
+.nav-icons a {
+    margin-left: 15px;
+}
+
+.navbar {
+    transition: top 0.3s;
+}
+
+
 
 @media screen and (max-width: 768px) {
     html, body {
@@ -315,39 +327,75 @@ ul a{
     }
 
     .navbar {
-        display: flex;
         flex-direction: column;
         align-items: center;
-        padding: 15px 0;
+        padding: 20px 0;
     }
 
-    .Logo img {
-        height: 65px;
-        margin-bottom: 5px;
+    .brand-container {
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .logo-img {
+        height: 100px;
+        margin-right: 0;
+        margin-bottom: 10px;
     }
 
     #Name {
-        font-size: 24px;
-        margin: 0 0 15px 0;
+        font-size: 28px;
+        white-space: normal;
+        margin-left: 0;
         text-align: center;
+        display: block;
+        width: 100%;
     }
 
     ul {
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 10px;
+        gap: 12px;
+        width: 100%;
         padding: 0;
     }
 
+    
     ul li {
-        width: 280px;
-        text-align: center;
+        width: 320px;
+        max-width: 90%;
+        list-style: none;
     }
 
-    
+    ul li a {
+        display: block;
+        width: 100%;
+        padding: 14px 0;
+        text-align: center;
+        text-decoration: none;
+        color: #fff;
+        background: #000; 
+        border: 1px solid #333;
+        border-radius: 8px;
+        font-size: 16px;
+    }
+
+    .nav-icons {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 30px;
+        margin-top: 20px;
+        width: 100%;
+    }
+
     .bottom-overlay, 
-    .card, 
+    .card,
     .assessment-box {
         width: 90%;
         max-width: 90%;
@@ -360,11 +408,10 @@ ul a{
         transform: none;
     }
 
-   
     .bottom-overlay p, 
     .about-section p {
-        font-size: 15px;
-        line-height: 1.5;
+        font-size: 12px;
+        line-height: 1.4;
         text-align: center;
         word-wrap: break-word;
         white-space: normal;
@@ -381,12 +428,114 @@ ul a{
     }
 
     h1 {
-        font-size: 30px;
+        font-size: 40px;
         text-align: center;
         margin: 15px 0;
+    }
+
+    h2 {
+        font-size: 20px;
+        text-align: center;
+        margin: 5px 0;
     }
 
     .purecounter, .plus {
         font-size: 45px;
     }
+}
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        display: flex !important;
+        flex-direction: row !important;
+        justify-content: space-between !important;
+        align-items: center !important;
+        padding: 10px 20px !important;
+        height: 70px !important;
+    }
+
+    .brand-container {
+        display: flex !important;
+        flex-direction: row !important;
+        align-items: center !important;
+        width: auto !important;
+        margin-bottom: 0 !important;
+    }
+
+    #Name {
+        font-size: 16px !important;
+        line-height: 1 !important;
+        margin-left: 10px !important;
+        color: black !important;
+        display: block !important;
+        width: auto !important;
+    }
+
+    .logo-img {
+        height: 40px !important;
+        margin: 0 !important;
+    }
+
+    .nav-icons {
+        display: none !important;
+    }
+
+    .hamburger {
+        display: flex !important;
+        flex-direction: column;
+        gap: 4px;
+        cursor: pointer;
+        z-index: 1001;
+    }
+
+    .hamburger span {
+        display: block;
+        width: 24px;
+        height: 3px;
+        background-color: black !important;
+        transition: 0.3s;
+    }
+
+    .navbar ul {
+        display: none !important;
+        position: absolute !important;
+        top: 70px !important;
+        left: 0 !important;
+        width: 100% !important;
+        background: white !important;
+        flex-direction: column !important;
+        padding: 20px 0 !important;
+        margin: 0 !important;
+        z-index: 999 !important;
+        box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    }
+
+    #menu-toggle:checked ~ ul {
+        display: flex !important;
+    }
+
+    #menu-toggle:checked + .hamburger span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+    #menu-toggle:checked + .hamburger span:nth-child(2) { opacity: 0; }
+    #menu-toggle:checked + .hamburger span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+    .navbar ul li {
+        width: 85% !important;
+        margin: 8px auto !important;
+        background: black !important;
+        padding: 15px !important;
+        border-radius: 8px !important;
+        text-align: center !important;
+        box-sizing: border-box !important;
+    }
+
+    .navbar ul li a {
+        color: white !important;
+        display: block;
+        width: 100%;
+    }
+
+    h1 { font-size: 32px !important; }
+    h2 { font-size: 22px !important; }
+    .hero-content, .assessment-hero-content { padding: 30px !important; width: 85% !important; }
+    .card, .assessment-box { width: 90% !important; margin: 15px auto !important; }
 }
