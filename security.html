@@ -3,33 +3,39 @@
 <head>
     <title>Security Assessment - Berimbolo Security</title>
     <link rel="stylesheet" href="Shop.css">
+    <link rel = "stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 
 <nav class="navbar">
-    <div class="brand-container">
-        <a href="index.html">
-            <img src="Assets/Images/Logo.png" alt="Company Logo" class="logo-img"> 
-        </a>
-        <span id="Name">Berimbolo<br>Security</span>
-    </div>
+        <div class="brand-container">
+            <a href="index.html">
+                <img src="Assets/Images/Logo.png" alt="Company Logo" class="logo-img">
+            </a>
+            <span id="Name">Berimbolo<br>Security</span>
+        </div>
 
-    <input type="checkbox" id="menu-toggle" style="display: none;">
-    <label for="menu-toggle" class="hamburger">
-        <span></span>
-        <span></span>
-        <span></span>
-    </label>
+        <input type="checkbox" id="menu-toggle" style="display: none;">
+        <label for="menu-toggle" class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+    
+        <ul>
+            <li><a href="Shop.html">Shop</a></li>
+            <li><a href="about-us.html">About Us</a></li>
+            <li><a href="security.html">Security Assesment</a></li>
+            <li><a href="#">Services</a></li>
+        </ul>
 
-    <ul>
-        <li><a href="Shop.html">Shop</a></li>
-        <li><a href="about-us.html">About Us</a></li>
-        <li><a href="security.html">Security Assessment</a></li>
-        <li><a href="#">Services</a></li>
-    </ul>
-</nav>
+        <div class="nav-icons">
+            <a href="#"><img src="Assets/Images/Phone.png" alt="contacts" style="height: 30px;"></a>
+            <a href="#"><img src="Assets/Images/Profile.png" alt="Account" style="height: 30px;"></a>
+        </div>
+    </nav>
 
 <section class="assessment-hero">
     <video autoplay muted loop class="assessment-video">
@@ -71,7 +77,7 @@
 
 
 <script src="script.js"></script>
-    <footer class="main-footer">
+   <div class="main-footer">
     <div class="footer-container">
 
         <div class="footer-section">
@@ -87,7 +93,7 @@
             <a href="about-us.html">About Us</a>
             <a href="security.html">Security Assessment</a>
         </div>
-
+    <div>
         <div class="footer-section">
             <h3>Contact</h3>
             <p>Phone: +256 769 969 69</p>
@@ -100,7 +106,10 @@
     <div class="footer-bottom">
         <p>© 2026 Berimbolo Security. All Rights Reserved.</p>
     </div>
-</footer>
+    </div>
+    </div>
+    
+
 
 <script>
 const navbar = document.querySelector('.navbar');
@@ -112,6 +121,7 @@ window.addEventListener('scroll', () => {
         navbar.style.display = 'flex';
     }
 });
+
 </script>
 </body>
 </html>

@@ -149,7 +149,7 @@ main{
 }
 
 main h2{
-    width: 1000px;
+    width: 1200px;
 }
 
 .stats-container {
@@ -184,6 +184,10 @@ main h2{
     background: #000;
     padding: 60px 10%;
     border-top: 2px solid #222;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 300px;
 }
 
 .footer-container {
@@ -264,7 +268,7 @@ footer{
         padding: 0;
     }
 
-    /* THE BURGER-STYLE MENU BUTTONS */
+    
     ul li {
         width: 320px;
         max-width: 90%;
@@ -278,12 +282,12 @@ footer{
         text-align: center;
         text-decoration: none;
         color: #fff;
-        background: #000; /* Match your black theme */
-        border: 1px solid #333; /* Subtle border like Snyk */
+        background: #000; 
+        border: 1px solid #333;
         border-radius: 8px;
         font-size: 16px;
     }
-
+    
     .nav-icons {
         display: flex;
         flex-direction: row;
@@ -341,9 +345,13 @@ footer{
     .purecounter, .plus {
         font-size: 45px;
     }
+
+    main h2{
+    width: 300px;
 }
 
-@media screen and (max-width: 768px) {
+
+
     .navbar {
         display: flex !important;
         flex-direction: row !important;
@@ -437,4 +445,5 @@ footer{
     h2 { font-size: 22px !important; }
     .hero-content, .assessment-hero-content { padding: 30px !important; width: 85% !important; }
     .card, .assessment-box { width: 90% !important; margin: 15px auto !important; }
-}
+
+    }
