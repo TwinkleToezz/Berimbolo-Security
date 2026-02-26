@@ -221,6 +221,8 @@ footer{
   padding-top: 300px;
 }
 
+/* ================= SERVICES PAGE ================= */
+
 .services-hero {
     text-align: center;
     padding: 150px 20px 80px 20px;
@@ -268,7 +270,6 @@ footer{
     font-size: 15px;
     color: #ddd;
 }
-
 
 @media screen and (max-width: 768px) {
     html, body {
